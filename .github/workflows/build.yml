@@ -1,0 +1,12 @@
+name: Building
+on: [push]
+jobs:
+  building:
+    run-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3 #copiamos el repositorio
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - uses: actions/setup-poetry@v7
+      - run: poetry --version
