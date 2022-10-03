@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "modeltools"
-version = "0.2.2"
+version = "0.2.21"
 description = ""
 authors = ["daleman"]
 readme = "README.md"
