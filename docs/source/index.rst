@@ -15,6 +15,8 @@ No hemos documentado mucho la verdad.
    :maxdepth: 2
    :caption: Contents:
 
+   install
+   example
 
 
 Indices and tables
