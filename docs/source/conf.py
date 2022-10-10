@@ -6,23 +6,29 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'ModelTools_doc'
-copyright = '2022, Daleman2'
-author = 'Daleman2'
-release = '0.2.21'
+project = "ModelTools_doc"
+copyright = "2022, Daleman2"
+author = "Daleman2"
+release = "0.2.21"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    "sphinx.ext.autodoc",
+    "autoapi.extension",
+]
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 exclude_patterns = []
-
 
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
-html_static_path = ['_static']
+html_theme = "alabaster"
+html_static_path = ["_static"]
+
+# Necesario para usar sphinx
+autoapi_type = "python"
+autoapi_dirs = ["../../modeltools"]
